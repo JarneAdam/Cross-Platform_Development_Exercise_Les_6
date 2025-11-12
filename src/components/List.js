@@ -94,6 +94,7 @@ const List = ({ status }) => {
         renderItem={renderItem}
         renderSectionHeader={renderSectionHeader}
         keyExtractor={item => item.id}
+        style={styles.list}
       />
     </View>
   );
@@ -101,9 +102,13 @@ const List = ({ status }) => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     width: '90%',
     maxWidth: 600,
     padding: 20,
+  },
+  list: {
+    flex: 1,
   },
   issueItem: {
     borderBottomWidth: 1,
